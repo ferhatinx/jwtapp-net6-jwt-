@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\jwtapp.back.props" />
+</Project>
