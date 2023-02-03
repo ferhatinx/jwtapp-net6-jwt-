@@ -1,10 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "NTLN9Pxmzx1SqhZaVsiqsYeGhJ/BAs1hQ7JCKlu6nSiafhjSeXHyVB3zR4RD5LFR1lMAXwnZ2Opvp2dwIQ+jAA==",
+  "dgSpecHash": "ka+ODTNK5UQx+0bNZtvdUGeCIIlFglrm6mloxKOjxy0j0No5SOEFFE0294jCi0kkop0eNkExvHaXPbEFzRlKoQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Betül\\3D Objects\\ferhat\\C#\\jwtapp\\jwtapp.back\\jwtapp.back.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Betül\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\Betül\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Betül\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Betül\\.nuget\\packages\\mediatr\\10.0.0\\mediatr.10.0.0.nupkg.sha512",
+    "C:\\Users\\Betül\\.nuget\\packages\\mediatr.contracts\\1.0.0\\mediatr.contracts.1.0.0.nupkg.sha512",
+    "C:\\Users\\Betül\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.0\\mediatr.extensions.microsoft.dependencyinjection.10.0.0.nupkg.sha512",
+    "C:\\Users\\Betül\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Betül\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.0\\microsoft.data.sqlite.core.6.0.0.nupkg.sha512",
     "C:\\Users\\Betül\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.0\\microsoft.entityframeworkcore.6.0.0.nupkg.sha512",
     "C:\\Users\\Betül\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.0\\microsoft.entityframeworkcore.abstractions.6.0.0.nupkg.sha512",

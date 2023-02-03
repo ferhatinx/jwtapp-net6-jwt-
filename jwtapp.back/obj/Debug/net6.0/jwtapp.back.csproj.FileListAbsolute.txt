@@ -56,3 +56,8 @@ C:\Users\Betül\3D Objects\ferhat\C#\jwtapp\jwtapp.back\obj\Debug\net6.0\refint\
 C:\Users\Betül\3D Objects\ferhat\C#\jwtapp\jwtapp.back\obj\Debug\net6.0\jwtapp.back.pdb
 C:\Users\Betül\3D Objects\ferhat\C#\jwtapp\jwtapp.back\obj\Debug\net6.0\jwtapp.back.genruntimeconfig.cache
 C:\Users\Betül\3D Objects\ferhat\C#\jwtapp\jwtapp.back\obj\Debug\net6.0\ref\jwtapp.back.dll
+C:\Users\Betül\3D Objects\ferhat\C#\jwtapp\jwtapp.back\bin\Debug\net6.0\MediatR.dll
+C:\Users\Betül\3D Objects\ferhat\C#\jwtapp\jwtapp.back\bin\Debug\net6.0\MediatR.Contracts.dll
+C:\Users\Betül\3D Objects\ferhat\C#\jwtapp\jwtapp.back\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Betül\3D Objects\ferhat\C#\jwtapp\jwtapp.back\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Betül\3D Objects\ferhat\C#\jwtapp\jwtapp.back\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
