@@ -8,12 +8,11 @@ using jwtapp.back.Core.Domain;
 
 namespace jwtapp.back.Core.Application.Mappings
 {
-    public class ProductProfile : Profile
+    public class CategoryProfile : Profile
     {
-        public ProductProfile()
+        public CategoryProfile()
         {
-            CreateMap<Product,ProductListDto>().ReverseMap();
-        
+            CreateMap<Category, CategoryListDto>().ReverseMap();
         }
     }
 }
