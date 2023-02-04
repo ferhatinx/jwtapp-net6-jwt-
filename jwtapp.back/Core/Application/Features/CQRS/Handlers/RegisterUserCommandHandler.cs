@@ -22,9 +22,10 @@ namespace jwtapp.back.Core.Application.Features.CQRS.Handlers
         public async Task<Unit> Handle(RegisterUserCommandRequest request, CancellationToken cancellationToken)
         {
             await _repository.CreateAsync(new AppUser{
+             
                 Username=request.Username,
                 Password=request.Password,
-                AppRoleId = (int)RoleType.Member
+                AppRoleId =(int)RoleType.Member
             });
             return Unit.Value;
         }

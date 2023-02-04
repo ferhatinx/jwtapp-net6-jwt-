@@ -1,3 +1,4 @@
+
 using System.Reflection;
 using System.Collections.Immutable;
 using jwt.back.Core.Application.Interfaces;
@@ -25,8 +26,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
     opt.RequireHttpsMetadata = false; //HTTPS gerekli olsun mu ?
     opt.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
     {
-        ValidateAudience=JwtTokenDefaults.ValidAudience,
-        ValidateIssuer=JwtTokenDefaults.ValidIssuer,
+        ValidAudience= JwtTokenDefaults.ValidAudience,
+        ValidIssuer=JwtTokenDefaults.ValidIssuer,
         ClockSkew = TimeSpan.Zero, //Token ile sunucu arasında saar farkı olsun mu ?
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(JwtTokenDefaults.Key)),
         ValidateIssuerSigningKey = true,
@@ -46,7 +47,8 @@ builder.Services.AddAutoMapper(opt=>{
     opt.AddProfiles(new List<Profile>()
     {
         new ProductProfile(),
-        new CategoryProfile()
+        new CategoryProfile(),
+        new AppUserProfile()
     });
 });
 var app = builder.Build();

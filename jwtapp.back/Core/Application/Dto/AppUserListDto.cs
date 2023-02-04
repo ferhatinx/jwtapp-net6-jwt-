@@ -2,16 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MediatR;
 
-namespace jwtapp.back.Core.Application.Features.CQRS.Commands
+namespace jwtapp.back.Core.Application.Dto
 {
-    public class RegisterUserCommandRequest : IRequest
+    public class AppUserListDto
     {
-        
+           public int Id { get; set; }
         public string? Username { get; set; }
         public string? Password { get; set; }
-        
-        
+
+        public int AppRoleId { get; set; }
     }
 }

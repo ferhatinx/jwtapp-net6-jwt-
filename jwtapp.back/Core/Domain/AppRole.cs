@@ -5,6 +5,6 @@ namespace jwtapp.back.Core.Domain
      
         public int Id { get; set; }
         public string? Definition { get; set; }
-        public ICollection<AppUser>? AppUsers { get; set; }
+        public List<AppUser>? AppUsers { get; set; }
     }
 }

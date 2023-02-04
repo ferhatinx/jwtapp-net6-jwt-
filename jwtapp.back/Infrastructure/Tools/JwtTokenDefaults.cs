@@ -1,3 +1,4 @@
+using System.Text;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,7 @@ namespace jwtapp.back.Infrastructure.Tools
         ValidateIssuerSigningKey = true,
         ValidateLifetime = true,
         */
-        public const string ValidAudience = "http://localhost";
+        public const string ValidAudience ="http://localhost";
         public const string ValidIssuer ="http://localhost";
         public const string Key = "ferhat05";
         public const int Expire = 5; 

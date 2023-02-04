@@ -15,14 +15,14 @@ namespace jwtapp.back.Infrastructure.Tools
     {
         public static TokenResponseDto GenereateToken(CheckUserResponseDto dto)
         {
-            var claims = new List<Claim>();
+            var customClaims = new List<Claim>();
             if (!string.IsNullOrEmpty(dto.Role))
             {
-                claims.Add(new Claim(ClaimTypes.Role, dto.Role));
+                customClaims.Add(new Claim(ClaimTypes.Role, dto.Role));
             }
-            claims.Add(new Claim(ClaimTypes.NameIdentifier,dto.Id.ToString()));
+           customClaims.Add(new Claim(ClaimTypes.NameIdentifier,dto.Id.ToString()));
             if(!string.IsNullOrEmpty(dto.Username))
-                claims.Add(new Claim("Username",dto.Username));
+                customClaims.Add(new Claim("Username",dto.Username));
 
             var securitykey =new SymmetricSecurityKey(Encoding.UTF8.GetBytes(JwtTokenDefaults.Key));
             SigningCredentials credentials = new(securitykey,SecurityAlgorithms.HmacSha256);
@@ -31,7 +31,7 @@ namespace jwtapp.back.Infrastructure.Tools
 
             JwtSecurityToken token = new(issuer:JwtTokenDefaults.ValidIssuer,
             audience:JwtTokenDefaults.ValidAudience,
-            claims:null,notBefore:DateTime.UtcNow, 
+            claims:customClaims,notBefore:DateTime.UtcNow, 
             expires: expireDate,
             signingCredentials:null);
 

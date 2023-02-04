@@ -42,6 +42,12 @@ namespace jwtapp.back.Controllers
                 return BadRequest("Kullanıcı adı veya şifre hatalı");
             }
         }
+         [HttpGet]
+        public async Task<IActionResult> List()
+        {
+            var result = await _mediator.Send(new GetAllAppUsersQueryRequest());
+            return Ok(result);
+        }
     }
 
 }
