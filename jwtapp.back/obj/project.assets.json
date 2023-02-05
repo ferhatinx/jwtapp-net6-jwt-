@@ -2928,26 +2928,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ferha\\.nuget\\packages\\": {}
+    "C:\\Users\\Betül\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ASP.NET CORE\\jwtApp\\jwtapp-net6-jwt-\\jwtapp.back\\jwtapp.back.csproj",
+      "projectUniqueName": "C:\\Users\\Betül\\3D Objects\\ferhat\\C#\\jwtapp-net6-jwt--1\\jwtapp.back\\jwtapp.back.csproj",
       "projectName": "jwtapp.back",
-      "projectPath": "E:\\ASP.NET CORE\\jwtApp\\jwtapp-net6-jwt-\\jwtapp.back\\jwtapp.back.csproj",
-      "packagesPath": "C:\\Users\\ferha\\.nuget\\packages\\",
-      "outputPath": "E:\\ASP.NET CORE\\jwtApp\\jwtapp-net6-jwt-\\jwtapp.back\\obj\\",
+      "projectPath": "C:\\Users\\Betül\\3D Objects\\ferhat\\C#\\jwtapp-net6-jwt--1\\jwtapp.back\\jwtapp.back.csproj",
+      "packagesPath": "C:\\Users\\Betül\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Betül\\3D Objects\\ferhat\\C#\\jwtapp-net6-jwt--1\\jwtapp.back\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ferha\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Betül\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3018,6 +3016,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.12, 6.0.12]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.12, 6.0.12]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.12, 6.0.12]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.12, 6.0.12]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -3026,7 +3042,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
