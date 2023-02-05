@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\jwtapp.front.props" />
+</Project>

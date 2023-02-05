@@ -35,6 +35,7 @@ namespace jwtapp.back.Core.Application.Features.CQRS.Handlers
             else
             {
                 var role = await _rolerepository.GetByFilterAsync(x=>x.Id == user.AppRoleId);
+                dto.Id=user.Id;
                 dto.Username=user.Username;
                 dto.Password=user.Password;
                 dto.IsExist=true;

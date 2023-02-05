@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ODchqi860tH4IQ42uDTfmmLMGpsGZtrdewoZ6CbyJsE=",
+  "Source": "jwtapp.front",
+  "BasePath": "_content/jwtapp.front",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

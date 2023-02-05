@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
-using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using jwtapp.back.Core.Application.Dto;
@@ -13,27 +12,32 @@ namespace jwtapp.back.Infrastructure.Tools
 {
     public static class JwtTokenGenerator
     {
-        public static TokenResponseDto GenereateToken(CheckUserResponseDto dto)
+        public static TokenResponseDto GenerateToken(CheckUserResponseDto dto)
         {
             var customClaims = new List<Claim>();
             if (!string.IsNullOrEmpty(dto.Role))
             {
                 customClaims.Add(new Claim(ClaimTypes.Role, dto.Role));
             }
+           
            customClaims.Add(new Claim(ClaimTypes.NameIdentifier,dto.Id.ToString()));
+            
             if(!string.IsNullOrEmpty(dto.Username))
-                customClaims.Add(new Claim("Username",dto.Username));
+                customClaims.Add(new Claim(ClaimTypes.Name,dto.Username));
 
-            var securitykey =new SymmetricSecurityKey(Encoding.UTF8.GetBytes(JwtTokenDefaults.Key));
+            var securitykey =new Microsoft.IdentityModel.Tokens.SymmetricSecurityKey(Encoding.UTF8.GetBytes("ferhatferhatferhat05"));
+
             SigningCredentials credentials = new(securitykey,SecurityAlgorithms.HmacSha256);
             
             var expireDate  = DateTime.UtcNow.AddMinutes(JwtTokenDefaults.Expire);
 
-            JwtSecurityToken token = new(issuer:JwtTokenDefaults.ValidIssuer,
+            JwtSecurityToken token = new(issuer:
+            JwtTokenDefaults.ValidIssuer,
             audience:JwtTokenDefaults.ValidAudience,
-            claims:customClaims,notBefore:DateTime.UtcNow, 
+            claims:customClaims,
+            notBefore:DateTime.UtcNow, 
             expires: expireDate,
-            signingCredentials:null);
+            signingCredentials:credentials);
 
             JwtSecurityTokenHandler handler = new();
             // handler.WriteToken()

@@ -22,7 +22,7 @@ namespace jwtapp.back.Controllers
             _mediator = mediator;
         }
 
-        [HttpPost("Register")]
+        [HttpPost("[action]")]
         public async Task<IActionResult> Register(RegisterUserCommandRequest request)
         {
             await _mediator.Send(request);
@@ -34,8 +34,9 @@ namespace jwtapp.back.Controllers
             var dto = await _mediator.Send(request);
             if (dto.IsExist)
             {
-                var token =JwtTokenGenerator.GenereateToken(dto);
-                return Created("",token);
+                return Created("",JwtTokenGenerator.GenerateToken(dto));
+            
+                
             }
             else
             {

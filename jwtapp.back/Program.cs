@@ -17,8 +17,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddDbContext<JwtContext>(opt => {
-opt.UseSqlite(builder.Configuration.GetConnectionString("Local"));
-opt.EnableSensitiveDataLogging();
+opt.UseSqlServer(builder.Configuration.GetConnectionString("Local"));
+
+
 });
 //JWT
 //Microsoft.AspNetCore.Authetication.JwtBearer
@@ -29,7 +30,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
         ValidAudience= JwtTokenDefaults.ValidAudience,
         ValidIssuer=JwtTokenDefaults.ValidIssuer,
         ClockSkew = TimeSpan.Zero, //Token ile sunucu arasında saar farkı olsun mu ?
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(JwtTokenDefaults.Key)),
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("ferhatferhatferhat05")),
         ValidateIssuerSigningKey = true,
         ValidateLifetime = true,
 
