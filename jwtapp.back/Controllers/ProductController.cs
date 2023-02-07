@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace jwtapp.back.Controllers
 {
-   [Authorize(Roles = "Admin")]
+   [Authorize(Roles = "Member")]
     [ApiController]
     [Route("api/[controller]")]
     public class ProductController : ControllerBase

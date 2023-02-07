@@ -17,7 +17,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddDbContext<JwtContext>(opt => {
-opt.UseSqlServer(builder.Configuration.GetConnectionString("Local"));
+opt.UseSqlite(builder.Configuration.GetConnectionString("Localite"));
 
 
 });
@@ -49,7 +49,8 @@ builder.Services.AddAutoMapper(opt=>{
     {
         new ProductProfile(),
         new CategoryProfile(),
-        new AppUserProfile()
+        new AppUserProfile(),
+        new AppRoleProfile()
     });
 });
 var app = builder.Build();

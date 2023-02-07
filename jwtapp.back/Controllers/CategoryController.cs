@@ -6,10 +6,12 @@ using jwtapp.back.Core.Application.Features.CQRS.Commands;
 using jwtapp.back.Core.Application.Features.CQRS.Handlers;
 using jwtapp.back.Core.Application.Features.CQRS.Queries;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace jwtapp.back.Controllers
 {
+    [Authorize(Roles ="Admin")]
     [ApiController]
     [Route("api/[controller]")]
     public class CategoryController : ControllerBase

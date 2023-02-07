@@ -29,7 +29,7 @@ namespace jwtapp.back.Infrastructure.Tools
 
             SigningCredentials credentials = new(securitykey,SecurityAlgorithms.HmacSha256);
             
-            var expireDate  = DateTime.UtcNow.AddMinutes(JwtTokenDefaults.Expire);
+            var expireDate  = DateTime.UtcNow.AddDays(JwtTokenDefaults.Expire);
 
             JwtSecurityToken token = new(issuer:
             JwtTokenDefaults.ValidIssuer,
